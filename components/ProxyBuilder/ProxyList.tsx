@@ -4,24 +4,18 @@ import { useState, useMemo } from "react";
 import { useClipboard } from "@/hooks/useClipboard";
 import Card from "../ui/Card";
 import Button from "../ui/Button";
-import { ProxyConfig, ProxyListConfig } from "@/lib/types";
+import { ProxyListConfig } from "@/lib/types";
 import { generateCsv, downloadCsv } from "@/lib/utils";
 
 interface ProxyListProps {
-  config: ProxyConfig;
   listConfig: ProxyListConfig;
   updateListConfig: (updates: Partial<ProxyListConfig>) => void;
-  generateList: () => string[];
-  isComplete: boolean;
   refresh?: () => void;
 }
 
 export default function ProxyList({
-  config,
   listConfig,
   updateListConfig,
-  generateList,
-  isComplete,
   proxyList = [],
   refresh,
 }: ProxyListProps & { proxyList?: string[] }) {
@@ -124,8 +118,8 @@ export default function ProxyList({
             }
           }}
           className={`w-full text-left p-4 rounded-xl border-2 transition-all cursor-pointer ${listConfig.skipIspStatic || listConfig.highEndPool
-              ? "border-accent bg-accent/5"
-              : "border-gray-200 bg-white hover:border-gray-300"
+            ? "border-accent bg-accent/5"
+            : "border-gray-200 bg-white hover:border-gray-300"
             }`}
           title="Click to cycle Advanced Proxy Modes"
         >

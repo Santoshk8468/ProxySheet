@@ -47,12 +47,6 @@
       "namedRegex": "^/api/balance(?:/)?$"
     },
     {
-      "page": "/api/soax-ip-check",
-      "regex": "^/api/soax\\-ip\\-check(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/api/soax\\-ip\\-check(?:/)?$"
-    },
-    {
       "page": "/favicon.ico",
       "regex": "^/favicon\\.ico(?:/)?$",
       "routeKeys": {},

@@ -16,7 +16,7 @@ export const randomSessionId = (): string => {
 
 export const buildPassword = (config: ProxyConfig): string => {
   const base = (config.password || "").trim();
-  let result = base || "PASSWORD";
+  const result = base || "PASSWORD";
 
   let suffix = "";
 

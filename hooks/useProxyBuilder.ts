@@ -126,8 +126,18 @@ export function useProxyBuilder(): UseProxyBuilderReturn {
     return generateProxyList(config, listConfig);
   }, [config, listConfig]);
 
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   // Regenerate when config, listConfig, or refreshTrigger changes
-  const proxyList = useMemo(() => generateList(), [generateList, refreshTrigger]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const proxyList = useMemo(() => {
+    if (!isMounted) return [];
+    return generateList();
+  }, [generateList, refreshTrigger, isMounted]);
 
   return {
     config,

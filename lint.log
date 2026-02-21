@@ -1,0 +1,8 @@
+
+/Users/santosh/Projects/ProxySheet/ProxySheet/components/ProxyBuilder/ProxyList.tsx
+  20:3  warning  'config' is defined but never used        @typescript-eslint/no-unused-vars
+  23:3  warning  'generateList' is defined but never used  @typescript-eslint/no-unused-vars
+  24:3  warning  'isComplete' is defined but never used    @typescript-eslint/no-unused-vars
+
+✖ 3 problems (0 errors, 3 warnings)
+

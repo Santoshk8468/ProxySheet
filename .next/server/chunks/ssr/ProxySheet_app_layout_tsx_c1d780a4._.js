@@ -1,0 +1,3 @@
+module.exports=[4416,a=>{"use strict";var b=a.i(30353);function c({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:"antialiased",children:a})})}a.s(["default",()=>c,"metadata",0,{title:"Residential Proxy Builder | IPRoyal Helper",description:"Build your IPRoyal residential proxy string in seconds. Compose HOST:PORT:USERNAME:PASSWORD strings with region selection and connection details.",keywords:["proxy","IPRoyal","residential proxy","proxy builder","proxy string"]}])}];
+
+//# sourceMappingURL=ProxySheet_app_layout_tsx_c1d780a4._.js.map

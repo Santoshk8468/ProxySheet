@@ -16,7 +16,6 @@ export default function ProxyBuilder() {
     isComplete,
     updateConfig,
     updateListConfig,
-    generateList,
     proxyList,
     refresh,
   } = useProxyBuilder();
@@ -46,11 +45,8 @@ export default function ProxyBuilder() {
       </div>
 
       <ProxyList
-        config={config}
         listConfig={listConfig}
         updateListConfig={updateListConfig}
-        generateList={generateList}
-        isComplete={isComplete}
         proxyList={proxyList}
         refresh={refresh}
       />

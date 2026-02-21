@@ -4,7 +4,6 @@ import { useState, useMemo } from "react";
 import { useProxyBuilder } from "@/hooks/useProxyBuilder";
 import { useClipboard } from "@/hooks/useClipboard";
 import Card from "../ui/Card";
-import Select from "../ui/Select";
 import Button from "../ui/Button";
 
 export default function SheetFormat() {
@@ -16,7 +15,6 @@ export default function SheetFormat() {
         proxyList,
         updateConfig,
         updateListConfig,
-        generateList,
         refresh,
     } = useProxyBuilder();
 
@@ -147,8 +145,8 @@ export default function SheetFormat() {
                             }
                         }}
                         className={`w-full text-left p-4 rounded-xl border-2 transition-all cursor-pointer ${listConfig.skipIspStatic || listConfig.highEndPool
-                                ? "border-accent bg-accent/5"
-                                : "border-gray-200 bg-white hover:border-gray-300"
+                            ? "border-accent bg-accent/5"
+                            : "border-gray-200 bg-white hover:border-gray-300"
                             }`}
                         title="Click to cycle Advanced Proxy Modes"
                     >

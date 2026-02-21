@@ -100,7 +100,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/santosh/Projects/Proxy_website/proxy-website-nextjs",
+    "outputFileTracingRoot": "/Users/santosh/Projects/ProxySheet",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,12 +293,12 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/santosh/Projects/Proxy_website/proxy-website-nextjs"
+      "root": "/Users/santosh/Projects/ProxySheet"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/santosh/Projects/Proxy_website/proxy-website-nextjs",
-  "relativeAppDir": "",
+  "appDir": "/Users/santosh/Projects/ProxySheet/ProxySheet",
+  "relativeAppDir": "ProxySheet",
   "files": [
     ".next/routes-manifest.json",
     ".next/server/pages-manifest.json",
